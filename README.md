@@ -8,6 +8,6 @@ I used the dataset provided by Udacity which are about 8000 images. More images 
 
 The dataset contains JPG images of dimensions 160x320x3. Here are some sample images from the dataset.
 
-![Sample Images](resource _for_readme/cameraimages.jpg)
+![Sample Images](resource _for_readme/cameraimages.JPG)
 
 
