@@ -9,7 +9,6 @@ I used the dataset provided by Udacity which are about 8000 images. More images 
 The dataset contains JPG images of dimensions 160x320x3. Here are some sample images from the dataset.
 
 ![Sample Images](resource _for_readme/cameraimages.JPG)
-<<<<<<< HEAD
 
 # Steering Angle Histogram
 
@@ -19,7 +18,7 @@ By observing this histogram we can say that much of the dataset has 0 steering a
 
 # Augmentation Techniques Used and Architecture
 
-![Nvidia's Architecture](resource _for_readme/nvidia_architecture.PNG)
+![Nvidia's Architecture](resource _for_readme/nvidia_architecture.png)
 
 I have to thank this [NVIDIA paper](http://images.nvidia.com/content/tegra/automotive/images/2016/solutions/pdf/end-to-end-dl-using-px.pdf) and [this blog post](https://chatbotslife.com/using-augmentation-to-mimic-human-driving-496b569760a9#.d779iwp28) for suggesting these techniques.
 
