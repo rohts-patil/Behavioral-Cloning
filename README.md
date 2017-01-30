@@ -19,7 +19,7 @@ By observing this histogram we can say that much of the dataset has 0 steering a
 
 # Augmentation Techniques Used and Architecture
 
-![Nvidia's Architecture](resource _for_readme/nvidia_architecture.JPG)
+![Nvidia's Architecture](resource _for_readme/nvidia_architecture.PNG)
 
 I have to thank this [NVIDIA paper](http://images.nvidia.com/content/tegra/automotive/images/2016/solutions/pdf/end-to-end-dl-using-px.pdf) and [this blog post](https://chatbotslife.com/using-augmentation-to-mimic-human-driving-496b569760a9#.d779iwp28) for suggesting these techniques.
 
@@ -36,7 +36,7 @@ Below is an example of generated data from the image source.
 2. And also the portion above the horizon can also be ignored.
 We can crop the image and remove this.
 
-![Final Image](resource _for_readme/crop_image.png)
+![Final Image](resource _for_readme/crop_image.JPG)
 
 
 # Simulation on the Test Track
