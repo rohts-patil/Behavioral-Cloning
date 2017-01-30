@@ -1,7 +1,5 @@
 # Behavioral-Cloning
 
-![alt tag](./assets/sdc.gif)
-
 This repo contains code for a project I did as a part of [Udacity's Self Driving Car Nano Degree Program](https://www.udacity.com/drive). We had to train a car to drive itself in a simulator. The car was trained to drive itself using a deep neural network.
 
 # Datset
@@ -13,7 +11,7 @@ The dataset contains JPG images of dimensions 160x320x3. Here are some sample im
 ![Sample Images](resource _for_readme/cameraimages.JPG)
 <<<<<<< HEAD
 
-## Steering Angle Histogram
+# Steering Angle Histogram
 
 By observing this histogram we can say that much of the dataset has 0 steering angle and due to this model may be biased towards it.
 
@@ -39,9 +37,8 @@ Below is an example of generated data from the image source.
 We can crop the image and remove this.
 
 ![Final Image](resource _for_readme/crop_image.png)
-=======
->>>>>>> bbf456d6bf8dc71f0a58a6beab7507725fc3081b
 
-## Simulation on the Test Track
+
+# Simulation on the Test Track
 
 Here is the [Driving Simulation on the Test Track](https://youtu.be/ZrM7kzP8yzM).
