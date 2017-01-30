@@ -35,7 +35,7 @@ print("img_height:", IMG_HEIGHT)
 print("img_width:", IMG_WIDTH)
 print("img_channel:", IMG_CHANNEL)
 
-#Up-sampling large turns and Down-sampling 0 degree angle Data for Training #######
+#Up-sampling large turns and Down-sampling 0 degree angle Data for Training 
 
 #Processing 
 df_right = []
@@ -50,7 +50,7 @@ for i in range(len(df)):
     if (angle > 0.15):
         df_right.append([center_img, left_img, right_img, angle])
 
-        # I'm adding a small deviation of the angle
+        # Adding a small deviation of the angle
         # This is to create more right turning samples for the same image
         for i in range(10):
             new_angle = angle * (1.0 + np.random.uniform(-1, 1) / 30.0)
@@ -59,7 +59,7 @@ for i in range(len(df)):
     elif (angle < -0.15):
         df_left.append([center_img, left_img, right_img, angle])
 
-        # I'm adding a small deviation of the angle
+        # Adding a small deviation of the angle
         # This is to create more left turning samples for the same image
         for i in range(15):
             new_angle = angle * (1.0 + np.random.uniform(-1, 1) / 30.0)
@@ -196,7 +196,7 @@ INPUT_IMG_WIDTH = 220
 
 
 # This will generate a batch of new images of final input dimensions and the y output (steering_angles)
-def generate_batch_train_from_dataframe(data_df, batch_size=128):
+def generate_batch_train(data_df, batch_size=128):
     batch_images = np.zeros((batch_size, INPUT_IMG_HEIGHT, INPUT_IMG_WIDTH, 3))
     batch_angles = np.zeros(batch_size)
 
@@ -214,7 +214,7 @@ def generate_batch_train_from_dataframe(data_df, batch_size=128):
 
         yield batch_images, batch_angles
 
-def generate_valid_from_dataframe(data_df):
+def generate_valid_data(data_df):
     while True:
         for idx in range(len(data_df)):
             data_row = data_df.iloc[[idx]].reset_index()
@@ -227,7 +227,7 @@ def generate_valid_from_dataframe(data_df):
             yield img, angle
 
 # Initialize generator
-valid_data_generator = generate_valid_from_dataframe(X_valid_data)
+valid_data_generator = generate_valid_data(X_valid_data)
 
 
 def save_model(fileModelJSON, fileWeights):
@@ -287,7 +287,7 @@ batch_size = 512
 idx_best = 0
 val_best = 9999
 
-train_data_generator = generate_batch_train_from_dataframe(X_train_data, batch_size)
+train_data_generator = generate_batch_train(X_train_data, batch_size)
 	
 model = get_model_nvidia()
 	
