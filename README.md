@@ -30,7 +30,7 @@ Below is an example of generated data from the image source.
 
 ![Sample Generated Data](resource_for_readme/preprocessing.JPG)
 
-#Architecture Specification:
+# Architecture Specification:
 
 - Input Layer is 66 x 220 x 3
 - Normalization Layer
