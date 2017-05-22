@@ -8,17 +8,17 @@ I used the dataset provided by Udacity which are about 8000 images. More images 
 
 The dataset contains JPG images of dimensions 160x320x3. Here are some sample images from the dataset.
 
-![Sample Images](resource _for_readme/cameraimages.JPG)
+![Sample Images](resource_for_readme/cameraimages.JPG)
 
 # Steering Angle Histogram
 
 By observing this histogram we can say that much of the dataset has 0 steering angle and due to this model may be biased towards it.
 
-![Steering Angle Histogram](resource _for_readme/histogram.JPG)
+![Steering Angle Histogram](resource_for_readme/histogram.JPG)
 
 # Augmentation Techniques Used and Architecture
 
-![Nvidia's Architecture](resource _for_readme/nvidia_architecture.png)
+![Nvidia's Architecture](resource_for_readme/nvidia_architecture.png)
 
 I have to thank this [NVIDIA paper](http://images.nvidia.com/content/tegra/automotive/images/2016/solutions/pdf/end-to-end-dl-using-px.pdf) and [this blog post](https://chatbotslife.com/using-augmentation-to-mimic-human-driving-496b569760a9#.d779iwp28) for suggesting these techniques.
 
@@ -28,7 +28,7 @@ I have to thank this [NVIDIA paper](http://images.nvidia.com/content/tegra/autom
 
 Below is an example of generated data from the image source.
 
-![Sample Generated Data](resource _for_readme/preprocessing.JPG)
+![Sample Generated Data](resource_for_readme/preprocessing.JPG)
 
 #Architecture Specification:
 
@@ -53,7 +53,7 @@ Here normalization is used to avoid over fitting.
 2. And also the portion above the horizon can also be ignored.
 We can crop the image and remove this.
 
-![Final Image](resource _for_readme/crop_image.JPG)
+![Final Image](resource_for_readme/crop_image.JPG)
 
 There are many hyper-parameters to tune:
 
